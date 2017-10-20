@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>window.showModalDialog</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link rel="stylesheet" href="css/showModalDialog.css">
+    <script src="js/showModalDialog.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Replacement for window.showModalDialog</h2>
+  <button onclick="openDialog();" class="button black">Open Modal</button>
+
+  <div id="id01" class="modal">
+    <div class="modal-content">
+  
+      <header class="container theme-color">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+  
+      <div class="container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+  
+      <footer class="container theme-color">
+        <p>Modal Footer</p>
+      </footer>
+  
+    </div>
+  </div> 
+</div>
+<script>
+    function openDialog(){
+        document.getElementById('id01').style.display='block';
+    }
+</script>      
+</body>
+</html>
